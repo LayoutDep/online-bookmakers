@@ -1,0 +1,123 @@
+/**
+ * Сброс стилей
+ */
+
+html, body, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q,
+samp, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, thead, tr, th, td, canvas, embed,
+figcaption, output, ruby, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: top;
+}
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+	display: block;
+}
+html {
+	-ms-text-size-adjust: none;
+	-webkit-text-size-adjust: none
+}
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+a:hover, a:active {
+	outline: none;
+}
+blockquote, q {
+	quotes: none;
+	margin: 1em 40px;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+}
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+b, strong {
+	font-weight: 700;
+}
+dfn {
+	font-style: italic;
+}
+mark {
+	background: #ff0;
+	color: #000;
+}
+pre, code, kbd, samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+audio[controls], canvas, video {
+	display: inline-block;
+}
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+figure {
+	margin: 0;
+}
+fieldset {
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+legend {
+	border: 0;
+}
+button, input, select, textarea {
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+}
+button, input {
+	line-height: normal;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+	border: none;
+	outline: none;
+}
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+[tabindex] {
+  outline: none;
+}
+input, button {
+	outline: none;
+	box-shadow: none;
+}
+[required] {
+	text-shadow: none;
+}

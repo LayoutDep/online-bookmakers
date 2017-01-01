@@ -1,0 +1,22 @@
+{
+  "name": "online-bookmakers",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "gulp": "latest",
+	"gulp-connect": "latest",
+	"gulp-sass": "latest",
+	"gulp-concat": "latest",
+	"gulp-autoprefixer": "latest",
+	"gulp-uglify": "latest",
+	"gulp-clean-css": "latest",
+	"gulp-rename": "latest",
+    "gulp-jsmin": "latest",
+    "gulp-sass-glob": "latest",
+    "gulp-plumber": "latest",
+    "gulp-image-optimization": "latest"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
