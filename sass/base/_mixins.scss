@@ -8,6 +8,11 @@
 	margin-right: auto;
 	padding-left: $paddingBetweenWindow;
 	padding-right: $paddingBetweenWindow;
+	
+	@include respond-to($mobile) {
+		padding-left: $paddingBetweenWindow / 2;
+		padding-right: $paddingBetweenWindow / 2;
+	};
 }
 
 // placeholder
@@ -30,5 +35,38 @@
 @mixin respond-to($media) {
 	@media only screen and (max-width: $media) {
 		@content;
+	}
+}
+
+// ul list
+@mixin list() {
+	
+	li {
+		font: 14px/18px OpenSansRegular;
+		margin-bottom: 15px;
+		padding-left: 16px;
+		position: relative;
+		color: $black;
+		
+		&:before {
+			width: 5px;
+			height: 5px;
+			background: $blue;
+			content: '';
+			border-radius: 50%;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	
+	a {
+		text-decoration: none;
+		color: #47619c;
+		
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }

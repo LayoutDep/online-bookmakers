@@ -1,0 +1,156 @@
+.table, .table tr, .table thead, .table tbody, .table td, .table th
+	+respond-to($desktop)
+		display: block
+		
+.table
+	color: $white
+	width: 100%
+	text-align: center
+	font: 16px 'OpenSansSemibold'
+	
+.table thead
+	font: 16px/1 'OpenSansSemibold'
+	background: rgba(51, 82, 148, .8)
+	
+	+respond-to($desktop)
+		display: none
+	
+.table tbody
+	background: rgba(0, 0, 0, .5)
+	
+	+respond-to($desktop)
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		padding: 10px 0 0
+
+.table_th
+	height: 55px
+	vertical-align: middle
+
+.table tr
+	+respond-to($desktop)
+		border: 1px solid $lightGray
+		padding: 10px
+		width: 48%
+		margin: 0 1% 10px
+		
+	+respond-to($tablet)
+		width: 98%
+		margin-left: 0
+		margin-right: 0
+		
+	+respond-to($mobile)
+		width: 96%
+
+.table td
+	vertical-align: middle
+	padding: 9px 0
+	
+	+respond-to($desktop)
+		display: table
+		width: 100% !important
+	
+.table_heading, .table_content
+	display: table-cell
+	text-align: center
+	width: 50%
+	
+.table_heading
+	text-align: right
+	padding-right: 10px
+	padding-top: 2px
+	padding-bottom: 2px
+	
+	+respond-to($mobile)
+		font-size: 15px
+		width: 40%
+
+.table_content
+	text-align: left
+	vertical-align: middle
+	padding-left: 10px
+	
+.table_th, .table_td
+	&.__num
+		width: 6%
+		padding-left: 17px
+		text-align: left
+		
+	&.__image
+		width: 17.3%
+		text-align: left
+		
+	&.__rating
+		width: 11%
+		
+	&.__min
+		width: 6.8%
+		
+	&.__live
+		width: 4.9%
+		
+	&.__mob
+		width: 5.8%
+		
+	&.__bonus
+		width: 15.2%
+		text-align: left
+		padding-left: 10px
+		
+	&.__link
+		text-align: left
+		
+.table_small
+	font: 12px/1 'OpenSansRegular'
+	
+	+respond-to($desktop)
+		display: inline
+		font-size: 16px
+
+.table_title
+	font: 16px/1 OpenSansSemibold
+	
+.table_btn
+	width: 160px
+	height: 25px
+	display: inline-block
+	text-decoration: none
+	color: $white
+	background: $blue
+	text-align: center
+	font: 13px/25px 'OpenSansSemibold'
+	transition: .2s
+	margin-right: 10px
+	
+	&:hover
+		background: $lightBlue
+		
+	+respond-to($desktop)
+		margin-right: 0
+		width: 100%
+		
+	+respond-to($mobile)
+		font-size: 12px
+		
+.table_link
+	font: 15px 'OpenSansSemibold'
+	color: $white
+	
+	&:hover
+		text-decoration: none
+		
+	+respond-to($desktop)
+		display: block
+		text-align: center
+		padding: 3px 0 0
+		
+.table_stars
+	padding-left: 18px
+	
+	+respond-to($desktop)
+		padding-left: 0
+		
+.table_image
+	width: 82px
+	display: inline-block

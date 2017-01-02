@@ -1,0 +1,127 @@
+.left-bar
+	width: 280px
+	margin-right: 20px
+	transition: .4s
+	background: $white
+	
+	&.__active
+		left: 0
+	
+	+respond-to($desktop)
+		position: fixed
+		top: 0
+		left: -280px
+		height: 100%
+		margin-right: 0
+		z-index: 999
+		
+.left-bar_inner
+	+respond-to($desktop)
+		height: 100%
+		overflow-y: auto
+		position: relative
+		z-index: 35
+		background: #f7f7f7
+		
+	
+.left-bar_item
+	padding: 16px 19px 16px
+	background: #f7f7f7
+	margin-bottom: 27px
+	border: 1px solid #e5e5e5
+	
+	+respond-to($desktop)
+		width: 97%
+		margin: 5px auto
+
+.left-bar_list
+	
+.left-bar_list a
+	color: $black
+	
+	&:hover
+		color: $blue
+		
+.left-bar_list li.__active > a
+	color: $blue
+	
+.left-bar_list > li
+	font: 15px/18px OpenSansRegular
+	margin-bottom: 17px
+	
+	&:last-child
+		margin-bottom: 0
+	
+	&:before
+		content: '»'
+		color: $blue
+		font-size: 20px
+		margin-right: 5px
+
+.left-bar_list > li > a
+	color: $black
+	text-decoration: none
+	
+.left-bar_inner-list
+	+list()
+	padding-left: 12px
+	display: none
+	
+	.left-bar_list > li.__active &
+		display: block
+	
+.left-bar_inner-list > li
+	margin-bottom: 0
+	margin-top: 18px
+	
+.left-bar_inner-list > li > a
+	color: $black
+	
+	&:hover
+		color: $blue
+		text-decoration: none
+		
+.left-bar__open
+	transition: left 0.4s
+	position: fixed
+	width: 30px
+	height: 60px
+	top: 50%
+	margin-top: -30px
+	left: 0
+	cursor: pointer
+	background-color: $black
+	display: none
+	z-index: 30
+	border: none
+	outline: none
+	
+	&.__active
+		transform: rotate(180deg)
+		left: 280px
+	
+	&:after
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAQAAABuQZ3IAAAAnklEQVQY02No+X9x438GZMjw+f//+8+OoggpsH28gioIRPIsIMGbO5GEYILXtiIJ/WdQ4fp55//9C+uRhP4zGIr8efD/2OnVSEIg+OrM//v39yMJaPK9Off//qmVcAEn1f+P/t/fPh2u0VwaJLBnNtx4I7F/QIFDC+GOMBL7++D//aNL4U41kwYJXN6M5KHfQG9f3Yri7aL/hxejBg4A/Pmn9EQPPJgAAAAASUVORK5CYII=) center no-repeat
+		content: ''
+		position: absolute
+		width: 30px
+		height: 60px
+		top: 0
+		left: 0
+	
+	+respond-to($desktop)
+		display: block
+		
+.left-bar_overlay
+	+respond-to($desktop)
+		z-index: 20
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(0, 0, 0, .6)
+		display: none
+	
+	&.__active
+		display: block

@@ -1,0 +1,117 @@
+.nav
+	height: 45px
+	background: $black
+	
+	+respond-to($desktop)
+		height: 35px
+		position: relative
+	
+.nav_wrapper
+	height: 100%
+	
+.nav_list
+	display: flex
+	justify-content: space-between
+	height: 100%
+	align-items: center
+	
+	+respond-to($desktop)
+		display: none
+		position: absolute
+		top: 100%
+		left: 0
+		width: 100%
+		height: auto
+
+.nav_list li
+	flex-grow: 1
+	height: 100%
+	
+.nav_list > li > a
+	text-transform: uppercase
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 100%
+	font: 14px/1 'RobotoCondensed'
+	color: $white
+	text-decoration: none
+	transition: .3s
+	position: relative
+	
+	+respond-to($desktop)
+		padding: 10px 0
+		background: $black
+	
+.nav_list > li
+	border-bottom: 3px solid transparent
+	
+	&:hover, &.__active
+		border-bottom-color: #ce1717
+		
+	&:hover > a, &.__active > a
+		background: #000
+		
+	+respond-to($desktop)
+		border-bottom: none
+		
+
+.nav_dropdown
+	position: relative
+	
+.nav_dropdown > a:after
+	content: ''
+	border: 5px solid transparent
+	border-top-color: #fff
+	position: absolute
+	right: 5px
+	top: 50%
+	transform: translateY(-3px)
+	
+	+respond-to($desktop)
+		right: -10px
+		top: 5px
+		position: relative
+
+.nav_inner-list
+	background: #f7f7f7
+	position: absolute
+	left: 0
+	top: 105%
+	padding: 10px 0
+	min-width: 100%
+	display: none
+	
+	.nav_list > li:hover &
+		display: block
+		
+		+respond-to($desktop)
+			display: none
+		
+	+respond-to($desktop)
+		position: static
+		text-align: center
+
+.nav_inner-list a
+	color: #666666
+	padding: 10px 20px
+	display: block
+	font: 14px/1 'RobotoCondensed'
+	text-transform: uppercase
+	text-decoration: none
+	white-space: nowrap
+	transition: .2s
+	
+	&:hover
+		color: #000000
+		background: #d4d2d2
+
+.nav_open-menu
+	text-align: center
+	color: $white
+	text-decoration: none
+	font: 18px/35px 'OpenSansRegular'
+	display: none
+	
+	+respond-to($desktop)
+		display: block

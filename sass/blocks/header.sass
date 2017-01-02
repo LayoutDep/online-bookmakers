@@ -1,0 +1,178 @@
+.header
+	
+.header_top
+	height: 79px
+	
+	+respond-to($desktop)
+		height: 60px
+		
+	+respond-to($tablet)
+		height: 100px
+		
+	+respond-to($mobile)
+		height: 120px
+
+.header_top-wrapper
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: 100%
+	
+	+respond-to($tablet)
+		flex-wrap: wrap
+	
+.header_auth
+	padding-left: 20px
+	position: relative
+	top: -4px
+	
+	&:before
+		content: ''
+		position: absolute
+		top: 8px
+		left: -6px
+		width: 14px
+		height: 14px
+		background-size: 14px 14px
+		background: url(../img/ico/man.svg) no-repeat left center
+	
+		+respond-to($desktop)
+			top: 50%
+			transform: translateY(-50%)
+			
+		+respond-to($mobile)
+			display: none
+		
+	+respond-to($desktop)
+		top: 0
+	+respond-to($mobile)
+		width: 75%
+		text-align: right
+
+.header_auth a
+	color: #666666
+	text-decoration: underline
+	font: 15px/1 'OpenSansSemibold'
+	
+	&:hover
+		text-decoration: none
+		
+	+respond-to($desktop)
+		font-size: 14px
+		display: block
+		padding: 3px 0
+		
+	+respond-to($tablet)
+		display: inline
+		font-size: 13px
+
+.header_auth span
+	margin: 0 4px
+	font: 20px/1.2 'OpenSansSemibold'
+	vertical-align: bottom
+	position: relative
+	top: 4px
+	
+	+respond-to($desktop)
+		display: none
+		
+	+respond-to($tablet)
+		display: inline-block
+		margin: 0
+		font-size: 15px
+		top: 2px
+
+.header_langs
+	position: relative
+	left: 10px
+	
+	+respond-to($mobile)
+		width: 50%
+		left: 0
+	
+.header_lang
+	cursor: pointer
+	
+.header_lang-dropdown
+	position: absolute
+	top: 100%
+	left: 0
+	min-width: 100%
+	background: $white
+	border: 1px solid #eceeee
+	z-index: 2
+	white-space: nowrap
+	padding: 5px 0
+	display: none
+	
+	.header_langs:hover &
+		display: block
+	
+.header_lang-dropdown .header_lang
+	padding: 10px
+	
+.header_lang-text
+	font: 15px/1.2 'OpenSansSemibold'
+	color: $black
+	position: relative
+	vertical-align: baseline
+	padding-right: 15px
+	text-decoration: underline
+	
+.header_lang-text.__ico
+	&:after
+		content: ''
+		border: 5px solid transparent
+		border-top: 5px solid $black
+		position: absolute
+		right: 0
+		top: 7px
+
+.header_lang-img
+	margin-right: 4px
+	vertical-align: baseline
+	position: relative
+	top: 3px
+	
+.header_search
+	width: 239px
+	height: 31px
+	background: #f0f0f0
+	display: flex
+	position: relative
+	left: -3px
+	
+	+respond-to($desktop)
+		width: 200px
+		position: static
+		
+	+respond-to($tablet)
+		order: 5
+		width: 100%
+	
+.header_search-btn
+	width: 30px
+	height: 31px
+	border: 1px solid #cccccc
+	background: url(../img/ico/search.svg) no-repeat center
+	background-size: 13px 13px
+	transition: .2s
+	
+	&:hover
+		background-color: #ebebeb
+
+.header_search-input
+	flex-grow: 1
+	border: 1px solid #cccccc
+	border-left: none
+	height: 31px
+	background: none
+	padding-left: 14px
+	padding-right: 5px
+	font: 13px/31px 'OpenSansSemibold'
+	color: #808080
+	
+.header_socials
+	+respond-to($mobile)
+		width: 50%
+		text-align: right

@@ -61,3 +61,53 @@
 	window.App = App;
 	window.app = new App();
 })(window, undefined);
+
+app.data.media = {
+	desktop: 1200
+};
+
+app.data.swipe = function (params) {
+	var left = isFunction( params.left ) ? params.left : undefined;
+	var right = isFunction( params.right ) ? params.right : undefined;
+	var top = isFunction( params.top ) ? params.top : undefined;
+	var bottom = isFunction( params.bottom ) ? params.bottom : undefined;
+	
+	var initialPoint;
+	var finalPoint;
+	document.addEventListener('touchstart', function(event) {
+		initialPoint=event.changedTouches[0];
+	}, false);
+	document.addEventListener('touchend', function(event) {
+		finalPoint=event.changedTouches[0];
+		var xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
+		var yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
+		
+		if ( xAbs > 20 || yAbs > 20 ) {
+			if ( xAbs > yAbs ) {
+				if (finalPoint.pageX < initialPoint.pageX && left){
+					/*СВАЙП ВЛЕВО*/
+						left();
+				}
+				else {
+					/*СВАЙП ВПРАВО*/
+					if ( xAbs > 70 && right)
+						right();
+				}
+			}
+			else {
+				if (finalPoint.pageY < initialPoint.pageY && top) {
+					/*СВАЙП ВВЕРХ*/
+					top();
+				}
+				else if (bottom) {
+					/*СВАЙП ВНИЗ*/
+					bottom();
+				}
+			}
+		}
+	}, false);
+};
+
+function isFunction(object) {
+	return typeof object == 'function';
+}

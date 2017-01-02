@@ -117,7 +117,6 @@ gulp.task('watch', function () {
 	gulp.watch(path.sass.root + '/**/*.*', ['css']);
 	gulp.watch([path.js.jqueryModules + '/**/*.*', path.js.major + '/**/*.*'], ['jsApp']);
 	gulp.watch([path.app.root + '/**/*.html'], ['html']);
-	gulp.watch([path.app.images + '/**/*.jpg', path.app.images + '/**/*.png', path.app.images + '/**/*.jpeg'], ['images']);
 });
 
 

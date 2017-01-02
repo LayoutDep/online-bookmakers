@@ -4,11 +4,23 @@
 
 
 // Максимальная ширина сайта
-$max-width: 1170px;
+$max-width: 1200px;
 
 // Расстояние сайта до экрана браузера
 $paddingBetweenWindow: 10px;
 
 // Цвета
-$black: #000000;
-$white: #ffffff;
+$black:			#333333;
+$white:			#ffffff;
+$gray:			#595959;
+$lightGray:		#999696;
+$blue:			#335294;
+$lightBlue:		#227496;
+$red:			#ff2a00;
+$pink:			#fbdcd6;
+$yellow:		#efce4a;
+
+// Адаптивность
+$desktop: 1200px;
+$tablet: 768px;
+$mobile: 520px;

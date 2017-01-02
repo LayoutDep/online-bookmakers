@@ -1,0 +1,39 @@
+.socials
+	display: inline-flex
+	
+.socials_item
+	width: 34px
+	height: 34px
+	display: inline-block
+	background-color: $black
+	border-radius: 50%
+	background-position: center
+	background-repeat: no-repeat
+	transition: .3s
+	margin-left: 14px
+	
+	&:hover
+		background-color: $blue
+	
+		
+	&:first-child
+		margin-left: 0
+	
+	&.__facebook
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAQAAAClHU5tAAAAlUlEQVQY05XNMWoCYRgE0K9xBSF1Ugli4T28hZeJWAYstFpBsBPPkD51GgWxtEkVVgKRZUF4Fv+SlVg53bwpJoQQOib2SpWvqGnjLwmGDfhN9FrXpZFhoin40RIiZDILUBh40g4fPn2Di4Od9/A/1T2dw5vcNu3WVsa3j4WX9BjCDJx0G5rX1HuUclDqNzRRqRw9C3EF/D3t+RBMUUsAAAAASUVORK5CYII=)
+		background-size: 9px 17px
+		
+	&.__google
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAABEklEQVQoFQXBP4gNAADA4a/XO5zFPaETw03yp1xK/gwnJ916mWwmu00GZTUyGiSDMum5wpVBhziTzWW0GVDE5S7dz/dJ0qWet1rV7162PUki6VZrjdKVtlppW5Ik0sE2u5mkpWoxSZIBTpswAXiGOQAY4DMWAB+wCk6YBUnv+9eppGt9bGfSuMfJEFz10LJHRo6Zt+643fbYdN43SdKop9XlpOWqqsaSJN2pXjeVRk33onHTTQ0BR12wH3PeOucHNvz1Fels73rQYoebaaV6krSvvYlm+9X9JGnYUutNJkl0tzqTJGm+rXYlSQbgJAAWvPETAB3qexvd7mKTHelGnzqQJIk0073W+tOXXnW9HUmS5D/5YPLk3VmuvgAAAABJRU5ErkJggg==)
+		background-size: 16px 16px
+		
+	&.__twitter
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDUlEQVR42mL8//8/AyWAhUh1EkDsDcSsQLwbiO9CxfkYgC5gB+KJQMwGcg0WbA/E7/8jwA8gngnEe4BYFKTAESpxBIjF0TQzAvGD/9jBXiCOBylSQxJ8DMQpQCwHNUDtP24wFxx+UIW7sSi4AcQr8BjgB9ILCkRtIGYDYlB0MCIFnDoU4wIXQAQTEF+FhjIjCbH3DogfwQwAgVQgvkWCAfvhLGgYgKJyCjSKCIGf0MAF64W54CcQXwdidiJsn4DiWrR4NwTijXhsPw3EPMh6YAwBILYG4llA/AeH5gnYUiuIMAfiHTg0fYOmUH8cyZyBESk3ygOxJhCrAPEvID4FxFeA+A++AGGkNDsDBBgAaXTfuEZBtLAAAAAASUVORK5CYII=)
+		background-size: 15px 13px
+		
+	+respond-to($desktop)
+		margin-left: 5px
+		
+	+respond-to($tablet)
+		width: 30px
+		height: 30px
