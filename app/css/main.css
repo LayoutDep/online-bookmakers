@@ -201,7 +201,30 @@ p {
   padding: 20px 0 64px; }
 
 .content_main {
-  flex-grow: 1; }
+  flex-grow: 1;
+  padding-top: 20px;
+  flex-basis: 1%; }
+  .content_main ul li {
+    font: 14px/18px OpenSansRegular;
+    margin-bottom: 15px;
+    padding-left: 16px;
+    position: relative;
+    color: #333333; }
+    .content_main ul li:before {
+      width: 5px;
+      height: 5px;
+      background: #335294;
+      content: '';
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+  .content_main ul a {
+    text-decoration: none;
+    color: #47619c; }
+    .content_main ul a:hover {
+      text-decoration: underline; }
 
 .content_wrapper {
   display: flex; }
