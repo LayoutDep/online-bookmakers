@@ -5,19 +5,23 @@ app.addModule('stars', function () {
 		return false;
 	}
 	
-	var $empty = $stars.find('.__empty');
-	
-	$empty.hover(function () {
-		var index = $(this).index();
+	$stars.each(function () {
+		var $this = $(this);
 		
-		$empty.each(function () {
-			var thIndex = $(this).index();
+		var $empty = $this.find('.__empty');
+	
+		$empty.hover(function () {
+			var index = $(this).index();
 			
-			if (thIndex <= index) {
-				$(this).removeClass('__empty');
-			}
+			$empty.each(function () {
+				var thIndex = $(this).index();
+				
+				if (thIndex <= index) {
+					$(this).removeClass('__empty');
+				}
+			});
+		}, function () {
+			$empty.addClass('__empty');
 		});
-	}, function () {
-		$empty.addClass('__empty');
 	});
 });
