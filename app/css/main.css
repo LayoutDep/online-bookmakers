@@ -179,12 +179,17 @@ body {
   position: relative;
   margin-right: 0; }
 
+.clear:before, .clear:after {
+  content: '';
+  display: table;
+  clear: both; }
+
 body, p {
   font: 14px/18px OpenSansRegular;
   color: #595959; }
 
 p {
-  margin-bottom: 15px; }
+  margin-bottom: 9px; }
 
 .wrapper {
   max-width: 1200px;
@@ -225,6 +230,8 @@ p {
     color: #47619c; }
     .content_main ul a:hover {
       text-decoration: underline; }
+  .content_main strong {
+    font-family: 'OpenSansSemibold'; }
 
 .content_wrapper {
   display: flex; }
@@ -241,8 +248,19 @@ h3 {
   color: #333333;
   border-bottom: 1px solid #335294; }
 
+.article-before {
+  padding: 19px;
+  background: #f2f6f8;
+  margin-bottom: 40px; }
+
+.article-before img {
+  float: left;
+  margin: 0 15px 20px 0; }
+
 .article-info {
   display: flex; }
+  .article-info.__margin-medium {
+    margin-bottom: 10px; }
 
 .article-info_item {
   background-size: 16px 16px;
@@ -250,11 +268,9 @@ h3 {
   background-position: left center;
   padding-left: 20px;
   font: 12px/18px 'OpenSansRegular';
-  margin-right: 33px;
+  margin-right: 28px;
   text-decoration: none;
   color: #333333; }
-  .article-info_item:hover {
-    color: #227496; }
   .article-info_item:last-child {
     margin-right: 0; }
   .article-info_item.__view {
@@ -263,6 +279,9 @@ h3 {
     background-image: url(../img/ico/comment.png); }
   .article-info_item.__repost {
     background-image: url(../img/ico/repost.png); }
+
+a.article-info_item:hover {
+  color: #227496; }
 
 .best-bookmakers {
   background: url(../img/best-bookmakers.jpg) center no-repeat;
@@ -293,6 +312,22 @@ h3 {
 .best-bookmakers_btn {
   text-align: center;
   margin: 20px 0 10px; }
+
+.bread-crumbs {
+  font: 14px/1 'OpenSansRegular';
+  color: #808080;
+  margin-left: -4px;
+  margin-bottom: 12px; }
+
+.bread-crumbs a {
+  margin: 0 4px;
+  color: #227496;
+  text-decoration: none; }
+  .bread-crumbs a:hover {
+    text-decoration: underline; }
+
+.bread-crumbs span {
+  margin-left: 4px; }
 
 .button {
   font: 13px/1.1 'OpenSansSemibold';
@@ -493,6 +528,9 @@ h3 {
       height: 100%;
       margin-right: 0;
       z-index: 999; } }
+
+.left-bar img {
+  max-width: 100%; }
 
 @media only screen and (max-width: 1200px) {
   .left-bar_inner {
