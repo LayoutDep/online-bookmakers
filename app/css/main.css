@@ -205,6 +205,14 @@ p {
 .content {
   padding: 20px 0 64px; }
 
+.content_bg-text {
+  padding: 25px 25px 30px;
+  background-size: cover;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 25px; }
+
 .content_main {
   flex-grow: 1;
   padding-top: 20px;
@@ -232,6 +240,10 @@ p {
       text-decoration: underline; }
   .content_main strong {
     font-family: 'OpenSansSemibold'; }
+  .content_main em {
+    font-style: italic; }
+  .content_main img {
+    max-width: 100%; }
 
 .content_wrapper {
   display: flex; }
@@ -248,10 +260,20 @@ h3 {
   color: #333333;
   border-bottom: 1px solid #335294; }
 
+.c-list-last_no-margin li:last-child {
+  margin-bottom: 0; }
+
 .article-before {
   padding: 19px;
   background: #f2f6f8;
-  margin-bottom: 40px; }
+  margin-bottom: 20px;
+  overflow: hidden; }
+  .article-before.__no-padding {
+    padding: 0; }
+  .article-before.__no-background {
+    background: none; }
+  .article-before.__margin-big {
+    margin-bottom: 40px; }
 
 .article-before img {
   float: left;

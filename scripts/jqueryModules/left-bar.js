@@ -1,5 +1,5 @@
 app.addModule('left-bar', function () {
-	var $leftBar = $('.left-bar');
+	var $leftBar = $('.js-left-bar');
 	
 	if (!$leftBar.length) {
 		return false;

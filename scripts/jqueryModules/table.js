@@ -65,7 +65,7 @@
 
 
 app.addModule('table', function () {
-	var $table = $('.table');
+	var $table = $('.js-table');
 	
 	if (!$table.length) {
 		return false;

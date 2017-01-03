@@ -2,7 +2,7 @@
  * Навигация
  */
 app.addModule('nav', function () {
-	var $nav = $('.nav');
+	var $nav = $('.js-nav');
 	var $menuList = $nav.find('.nav_list');
 	var $dropDownOpenLinks = $nav.find('.nav_dropdown > a');
 	var $dropDownList = $nav.find('.nav_inner-list');
