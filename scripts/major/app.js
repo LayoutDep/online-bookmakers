@@ -63,7 +63,7 @@
 })(window, undefined);
 
 app.data.media = {
-	desktop: 1200
+	desktop: 1201
 };
 
 app.data.swipe = function (params) {
