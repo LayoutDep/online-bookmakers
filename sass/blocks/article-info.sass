@@ -1,5 +1,8 @@
 .article-info
 	display: flex
+	
+	&.__margin-medium
+		margin-bottom: 10px
 
 .article-info_item
 	background-size: 16px 16px
@@ -10,9 +13,6 @@
 	margin-right: 33px
 	text-decoration: none
 	color: $black
-	
-	&:hover
-		color: $lightBlue
 	
 	&:last-child
 		margin-right: 0
@@ -25,3 +25,7 @@
 	
 	&.__repost
 		background-image: url(../img/ico/repost.png)
+		
+
+a.article-info_item:hover
+	color: $lightBlue
