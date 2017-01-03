@@ -27,16 +27,17 @@
 							<span class="header_lang-text __ico">Русский</span>
 						</div>
 						
-						<div class="header_lang-dropdown">
-							<div class="header_lang">
-								<img class="header_lang-img" src="img/ico/rus_flag.jpg" alt="">
-								<a href="" class="header_lang-text">Русский 2</a>
-							</div>
-							<div class="header_lang">
-								<img class="header_lang-img" src="img/ico/rus_flag.jpg" alt="">
-								<a href="" class="header_lang-text">Русский 3</a>
-							</div>
-						</div><!-- /.header_lang-dropdown -->
+						<!--Возможность изменить язык-->
+						<!--<div class="header_lang-dropdown">-->
+							<!--<div class="header_lang">-->
+								<!--<img class="header_lang-img" src="img/ico/rus_flag.jpg" alt="">-->
+								<!--<a href="" class="header_lang-text">Английский</a>-->
+							<!--</div>-->
+							<!--<div class="header_lang">-->
+								<!--<img class="header_lang-img" src="img/ico/rus_flag.jpg" alt="">-->
+								<!--<a href="" class="header_lang-text">Русский</a>-->
+							<!--</div>-->
+						<!--</div>&lt;!&ndash; /.header_lang-dropdown &ndash;&gt;-->
 					</div><!-- /.header_langs -->
 					
 					<form class="header_search">
@@ -59,14 +60,22 @@
 					<div class="wrapper nav_wrapper">
 						<ul class="nav_list">
 							<li class="__active"><a href="">РЕЙТИНГ БУКМЕКЕРОВ</a></li>
-							<li><a href="">АКЦИИ И БОНУСЫ</a></li>
+							<li class="nav_dropdown">
+								<a href="">АКЦИИ И БОНУСЫ</a>
+								
+								<ul class="nav_inner-list">
+									<li><a href="">Кэш-бонус</a></li>
+									<li><a href="">ФриБет-бонус</a></li>
+									<li><a href="">Бонус за регистрацию</a></li>
+								</ul><!-- /.nav_inner-list -->
+							</li>
 							<li class="nav_dropdown">
 								<a href="">ПРОГНОЗЫ НА СПОРТ</a>
 								<ul class="nav_inner-list">
-									<li><a href="">Ставки на футбол</a></li>
-									<li><a href="">Ставки на хоккей</a></li>
-									<li><a href="">Ставки на теннис</a></li>
-									<li><a href="">Ставки на баскетбол</a></li>
+									<li><a href="">Прогнозы  на футбол</a></li>
+									<li><a href="">Прогнозы  на хоккей</a></li>
+									<li><a href="">Прогнозы  на теннис</a></li>
+									<li><a href="">Прогнозы  на баскетбол</a></li>
 								</ul><!-- /.nav_inner-list -->
 							</li>
 							<li class="nav_dropdown">
@@ -75,7 +84,7 @@
 									<li><a href="">Ставки на футбол</a></li>
 									<li><a href="">Ставки на хоккей</a></li>
 									<li><a href="">Ставки на теннис</a></li>
-									<li><a href="">Ставки на баскетбол lorem lorem</a></li>
+									<li><a href="">Ставки на баскетбол</a></li>
 								</ul><!-- /.nav_inner-list -->
 							</li>
 							<li><a href="">ВЫИГРЫШНЫЕ СТАВКИ</a></li>
@@ -91,7 +100,7 @@
 		
 		<div class="best-bookmakers">
 			<div class="wrapper">
-				<h1 class="best-bookmakers_title">ТОП-5 Лучших букмекеров мира</h1>
+				<div class="best-bookmakers_title">ТОП-5 Лучших букмекеров мира</div>
 				<table class="table js-table">
 					<thead>
 						<tr>
@@ -265,10 +274,10 @@
 		
 		<div class="content">
 			<div class="wrapper content_wrapper">
-				<div class="left-bar js-left-bar">
+				<aside class="left-bar js-left-bar">
 					<div class="left-bar_inner">
 						<div class="left-bar_item">
-							<h3>Статьи и аналитика</h3>
+							<div class="left-bar_title">Статьи и аналитика</div>
 							
 							<ul class="left-bar_list">
 								<li class="__active">
@@ -317,7 +326,7 @@
 						</div><!-- /.left-bar_item -->
 						
 						<div class="left-bar_item">
-							<h3>Полезно знать</h3>
+							<div class="left-bar_title">Полезно знать</div>
 							
 							<div class="left-bar_links">
 								<div class="left-bar_link">
@@ -357,7 +366,7 @@
 						</div><!-- /.left-bar_item -->
 						
 						<div class="left-bar_item">
-							<h3>Самое обсуждаемое</h3>
+							<div class="left-bar_title">Самое обсуждаемое</div>
 							
 							<div class="left-bar_links">
 								<div class="left-bar_link">
@@ -402,7 +411,7 @@
 							</div><!-- /.left-bar_links -->
 						</div><!-- /.left-bar_item -->
 					</div><!-- /.left-bar_inner -->
-				</div><!-- /.left-bar -->
+				</aside><!-- /.left-bar -->
 				
 				<div class="content_main">
 					<div class="bread-crumbs">
