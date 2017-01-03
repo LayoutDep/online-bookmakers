@@ -241,6 +241,29 @@ h3 {
   color: #333333;
   border-bottom: 1px solid #335294; }
 
+.article-info {
+  display: flex; }
+
+.article-info_item {
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 20px;
+  font: 12px/18px 'OpenSansRegular';
+  margin-right: 33px;
+  text-decoration: none;
+  color: #333333; }
+  .article-info_item:hover {
+    color: #227496; }
+  .article-info_item:last-child {
+    margin-right: 0; }
+  .article-info_item.__view {
+    background-image: url(../img/ico/eye.png); }
+  .article-info_item.__comments {
+    background-image: url(../img/ico/comment.png); }
+  .article-info_item.__repost {
+    background-image: url(../img/ico/repost.png); }
+
 .best-bookmakers {
   background: url(../img/best-bookmakers.jpg) center no-repeat;
   background-size: cover;
@@ -484,6 +507,10 @@ h3 {
   background: #f7f7f7;
   margin-bottom: 27px;
   border: 1px solid #e5e5e5; }
+  .left-bar_item.__no-padding {
+    padding: 0; }
+  .left-bar_item.__no-border {
+    border: none; }
   @media only screen and (max-width: 1200px) {
     .left-bar_item {
       width: 97%;
@@ -591,6 +618,24 @@ h3 {
 
 .left-bar_overlay.__active {
   display: block; }
+
+.left-bar_link {
+  margin-bottom: 15px; }
+  .left-bar_link:last-child {
+    margin-bottom: 0; }
+
+.left-bar_a {
+  font: 14px/18px 'OpenSansRegular';
+  margin-bottom: 5px;
+  display: block;
+  color: #227496;
+  text-decoration: none; }
+  .left-bar_a:hover {
+    text-decoration: underline; }
+
+.left-bar_links-data {
+  display: flex;
+  justify-content: space-between; }
 
 @media only screen and (max-width: 1200px) {
   .logo {

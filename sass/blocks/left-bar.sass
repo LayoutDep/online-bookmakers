@@ -30,6 +30,12 @@
 	margin-bottom: 27px
 	border: 1px solid #e5e5e5
 	
+	&.__no-padding
+		padding: 0
+		
+	&.__no-border
+		border: none
+	
 	+respond-to($desktop)
 		width: 97%
 		margin: 5px auto
@@ -125,3 +131,25 @@
 	
 	&.__active
 		display: block
+		
+.left-bar_links
+	
+.left-bar_link
+	margin-bottom: 15px
+	
+	&:last-child
+		margin-bottom: 0
+	
+.left-bar_a
+	font: 14px/18px 'OpenSansRegular'
+	margin-bottom: 5px
+	display: block
+	color: $lightBlue
+	text-decoration: none
+	
+	&:hover
+		text-decoration: underline
+		
+.left-bar_links-data
+	display: flex
+	justify-content: space-between
