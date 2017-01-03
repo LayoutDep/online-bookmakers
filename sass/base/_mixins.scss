@@ -70,3 +70,25 @@
 		}
 	}
 }
+
+/** type */
+@mixin typeArticleWrapper() {
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	overflow: hidden;
+	width: 85px;
+	height: 80px;
+}
+@mixin typeArticle() {
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	color: $white;
+	background: $red;
+	font: 13.6px/30px 'RobotoRegular';
+	position: absolute;
+	top: 0;
+	right: -30px;
+	transform: rotate(45deg) translateX(22px);
+}
