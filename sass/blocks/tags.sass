@@ -1,0 +1,47 @@
+.tags
+	padding: 10px 20px 0
+	margin-bottom: 20px
+	background: #f2f2f2
+	border-bottom: 1px solid #d9d9d9
+	box-shadow: 0 0 0 1px #f1f1f1
+
+.tags_text
+	float: left
+	margin-right: 55px
+	line-height: 30px
+	
+	+respond-to($tablet)
+		float: none
+		margin-right: 0
+		line-height: 1
+		margin-bottom: 15px
+		text-align: center
+		display: block
+	
+.tags_items
+	
+	+respond-to($tablet)
+
+.tags_item
+	display: inline-block
+	padding: 0 13px
+	height: 30px
+	font: 13px/30px 'OpenSansSemibold'
+	box-sizing: content-box
+	border: 1px solid $blue
+	color: $blue
+	text-decoration: none
+	margin-right: 11px
+	transition: .3s
+	margin-bottom: 10px
+	
+	&:hover
+		color: $white
+		background: $blue
+		
+	
+	&.__active
+		color: $white
+		background: $blue
+		border: none
+	
