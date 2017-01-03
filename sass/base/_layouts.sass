@@ -7,6 +7,13 @@ body
 	position: relative
 	margin-right: 0
 	
+.clear
+	&:before, &:after
+		content: ''
+		display: table
+		clear: both
+		
+
 body, p
 	font: 14px/18px OpenSansRegular
 	color: $gray
@@ -29,7 +36,10 @@ p
 	
 	ul
 		+list()
-	
+		
+	strong
+		font-family: 'OpenSansSemibold'
+
 .content_wrapper
 	display: flex
 	
