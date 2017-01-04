@@ -16,8 +16,16 @@
 .article-before img
 	float: left
 	margin-right: 15px
+	max-width: 407px
+	
+	+respond-to($tablet)
+		max-width: 50%
 	
 	+respond-to($mobile)
 		float: none
 		margin: 0 auto 20px
 		display: block
+		max-width: 100%
+		
+.article-before_wrap
+	overflow: hidden

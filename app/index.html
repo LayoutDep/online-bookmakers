@@ -1,13 +1,555 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Заголовок</title>
+	<title>Статьи</title>
+	<link rel="stylesheet" href="css/main.css">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0">
 </head>
 <body>
-	
-	
+	<div class="container">
+		<header class="header">
+			<div class="header_top">
+				<div class="wrapper header_top-wrapper">
+					<a href="" class="logo">
+						<img src="img/logo.png" alt="" width="250" height="44">
+					</a><!-- /.logo -->
+					
+					<div class="header_auth">
+						<a href="">Авторизация</a>
+						<span>/</span>
+						<a href="">Регистрация</a>
+					</div><!-- /.header_auth -->
+					
+					<div class="header_langs">
+						<div class="header_lang">
+							<img class="header_lang-img" src="img/ico/rus_flag.jpg" alt="">
+							<span class="header_lang-text __ico">Русский</span>
+						</div>
+						
+						<!--Возможность изменить язык-->
+						<!--<div class="header_lang-dropdown">-->
+							<!--<div class="header_lang">-->
+								<!--<img class="header_lang-img" src="img/ico/rus_flag.jpg" alt="">-->
+								<!--<a href="" class="header_lang-text">Английский</a>-->
+							<!--</div>-->
+							<!--<div class="header_lang">-->
+								<!--<img class="header_lang-img" src="img/ico/rus_flag.jpg" alt="">-->
+								<!--<a href="" class="header_lang-text">Русский</a>-->
+							<!--</div>-->
+						<!--</div>&lt;!&ndash; /.header_lang-dropdown &ndash;&gt;-->
+					</div><!-- /.header_langs -->
+					
+					<form class="header_search">
+						<input type="submit" class="header_search-btn" value="">
+						<input type="text" class="header_search-input" placeholder="Поиск по сайту">
+					</form><!-- /.header_search -->
+					
+					<div class="header_socials">
+						<div class="socials">
+							<a href="" target="_blank" rel="author" class="socials_item __facebook"></a>
+							<a href="" target="_blank" rel="author" class="socials_item __twitter"></a>
+							<a href="" target="_blank" rel="author" class="socials_item __google"></a>
+						</div><!-- /.socials -->
+					</div><!-- /.header_socials -->
+				</div><!-- /.wrapper -->
+			</div><!-- /.header_top -->
+			
+			<div class="header_nav">
+				<nav class="nav js-nav">
+					<div class="wrapper nav_wrapper">
+						<ul class="nav_list">
+							<li class="__active"><a href="">РЕЙТИНГ БУКМЕКЕРОВ</a></li>
+							<li class="nav_dropdown">
+								<a href="">АКЦИИ И БОНУСЫ</a>
+								
+								<ul class="nav_inner-list">
+									<li><a href="">Кэш-бонус</a></li>
+									<li><a href="">ФриБет-бонус</a></li>
+									<li><a href="">Бонус за регистрацию</a></li>
+								</ul><!-- /.nav_inner-list -->
+							</li>
+							<li class="nav_dropdown">
+								<a href="">ПРОГНОЗЫ НА СПОРТ</a>
+								<ul class="nav_inner-list">
+									<li><a href="">Прогнозы  на футбол</a></li>
+									<li><a href="">Прогнозы  на хоккей</a></li>
+									<li><a href="">Прогнозы  на теннис</a></li>
+									<li><a href="">Прогнозы  на баскетбол</a></li>
+								</ul><!-- /.nav_inner-list -->
+							</li>
+							<li class="nav_dropdown"> 
+								<a href="">СТАВКИ НА СПОРТ</a>
+								<ul class="nav_inner-list">
+									<li><a href="">Ставки на футбол</a></li>
+									<li><a href="">Ставки на хоккей</a></li>
+									<li><a href="">Ставки на теннис</a></li>
+									<li><a href="">Ставки на баскетбол</a></li>
+								</ul><!-- /.nav_inner-list -->
+							</li>
+							<li><a href="">ВЫИГРЫШНЫЕ СТАВКИ</a></li>
+							<li><a href="">ШКОЛА БЕТТИНГА</a></li>
+							<li><a href="">СТАТЬИ И АНАЛИТИКА</a></li>
+						</ul><!-- /.nav_list -->
+						
+						<a href="" class="nav_open-menu">Меню</a>
+					</div><!-- /.wrapper -->
+				</nav><!-- /.nav -->
+			</div><!-- /.header_nav -->
+		</header><!-- /.header -->
+		
+		<div class="content">
+			<div class="wrapper content_wrapper">
+				<aside class="left-bar js-left-bar">
+					<div class="left-bar_inner">
+						<div class="left-bar_item">
+							<div class="left-bar_title">Букмекерские конторы</div>
+							
+							<ul class="left-bar_list">
+								<li>
+									<a href="">Букмекерские конторы</a>
+									
+									<ul class="left-bar_inner-list">
+										<li><a href="">Лига Чемпионов</a></li>
+										<li class="__active"><a href="">Чемпионат Англии</a></li>
+										<li><a href="">Чемпионат Испании</a></li>
+										<li><a href="">Чемпионат Италии</a></li>
+									</ul><!-- /.left-bar_inner-list -->
+								</li>
+								<li>
+									<a href="">Крупнейшие букмекеры</a>
+									
+									<ul class="left-bar_inner-list">
+										<li><a href="">Лига Чемпионов</a></li>
+										<li><a href="">Чемпионат Англии</a></li>
+										<li><a href="">Чемпионат Испании</a></li>
+										<li><a href="">Чемпионат Италии</a></li>
+									</ul><!-- /.left-bar_inner-list -->
+								</li>
+								<li>
+									<a href="">Лучшие онлайн-букмекеры</a>
+								</li>
+								<li>
+									<a href="">Обзор букмекерских контор</a>
+									
+									<ul class="left-bar_inner-list">
+										<li><a href="">Лига Чемпионов</a></li>
+										<li><a href="">Чемпионат Англии</a></li>
+										<li><a href="">Чемпионат Испании</a></li>
+										<li><a href="">Чемпионат Италии</a></li>
+									</ul><!-- /.left-bar_inner-list -->
+								</li>
+								<li>
+									<a href="">БК для новичков</a>
+								</li>
+								<li>
+									<a href="">БК для профессионалов</a>
+								</li>
+								<li>
+									<a href="">Народный рейтинг букмекеров</a>
+								</li>
+							</ul><!-- /.left-bar_list -->
+						</div><!-- /.left-bar_item -->
+						
+						<div class="left-bar_item">
+							<div class="left-bar_title __no-border __no-padding">Букмекер месяца</div>
+							<div class="left-bar_descr"><span class="red">*</span> По мнению пользователей ONB</div>
+							
+							<div class="left-bar_image">
+								<a href=""><img src="img/logo-leon.jpg" alt=""></a>
+								
+								<a href="" class="left-bar_image-wrapper">
+									<span class="left-bar_image-category">BEST</span>
+								</a>
+							</div><!-- /.left-bar_image -->
+							
+							<div class="left-bar_rating">
+								<span>Рейтинг:</span>
+								<div class="stars">
+									<div class="stars_item"></div>
+									<div class="stars_item"></div>
+									<div class="stars_item"></div>
+									<div class="stars_item"></div>
+									<div class="stars_item"></div>
+								</div>
+							</div><!-- /.left-bar_rating -->
+							
+							<div class="left-bar_rating __margin_medium">
+								<span>Голосов:</span>
+								<span>1256</span>
+							</div><!-- /.left-bar_rating -->
+							
+							<div class="left-bar_info">
+								<div class="left-bar_info-item">
+									<span>Бонус:</span>
+									<span>$150</span>
+								</div>
+								<div class="left-bar_info-item">
+									<span>Мин. депозит:</span>
+									<span>$10</span>
+								</div>
+								<div class="left-bar_info-item">
+									<span>Мин. ставка:</span>
+									<span>$1</span>
+								</div>
+							</div><!-- /.left-bar_info -->
+							
+							<div class="left-bar_book-links">
+								<a href="" class="button left-bar_book-link __button">Перейти в LEONBETS</a>
+								<a href="" class="left-bar_book-link __a">Читать обзор</a>
+							</div><!-- /.left-bar_links -->
+						</div><!-- /.left-bar_item -->
+						
+						<div class="left-bar_item">
+							<div class="left-bar_title">Полезно знать</div>
+							
+							<div class="left-bar_links">
+								<div class="left-bar_link">
+									<a href="" class="left-bar_a">Как выбрать букмекрскую контору</a>
+									<div class="left-bar_links-data">
+										<div class="left-bar_date">19.10.2016 14:13</div>
+										<div class="article-info">
+											<div class="article-info_item __comments">12</div>
+										</div><!-- /.article-info -->
+									</div>
+								</div><!-- /.left-bar_link -->
+								
+								<div class="left-bar_link">
+									<a href="" class="left-bar_a">Как ставить в букмекерских конторах</a>
+									<div class="left-bar_links-data">
+										<div class="left-bar_date">19.10.2016 14:13</div>
+										<div class="article-info">
+											<div class="article-info_item __comments">12</div>
+										</div><!-- /.article-info -->
+									</div>
+								</div><!-- /.left-bar_link -->
+								
+								<div class="left-bar_link">
+									<a href="" class="left-bar_a">Как обыграть букмекера</a>
+									<div class="left-bar_links-data">
+										<div class="left-bar_date">19.10.2016 14:13</div>
+										<div class="article-info">
+											<div class="article-info_item __comments">12</div>
+										</div><!-- /.article-info -->
+									</div>
+								</div><!-- /.left-bar_link -->
+							</div><!-- /.left-bar_links -->
+						</div><!-- /.left-bar_item -->
+						
+						<div class="left-bar_item __no-padding __no-border">
+							<a href=""><img src="img/banner.jpg" alt=""></a>
+						</div><!-- /.left-bar_item -->
+						
+						<div class="left-bar_item">
+							<div class="left-bar_title">Самое обсуждаемое</div>
+							
+							<div class="left-bar_links">
+								<div class="left-bar_link">
+									<a href="" class="left-bar_a">Как выбрать букмекрскую контору</a>
+									<div class="left-bar_links-data">
+										<div class="left-bar_date">19.10.2016 14:13</div>
+										<div class="article-info">
+											<div class="article-info_item __comments">12</div>
+										</div><!-- /.article-info -->
+									</div>
+								</div><!-- /.left-bar_link -->
+								
+								<div class="left-bar_link">
+									<a href="" class="left-bar_a">Как ставить в букмекерских конторах</a>
+									<div class="left-bar_links-data">
+										<div class="left-bar_date">19.10.2016 14:13</div>
+										<div class="article-info">
+											<div class="article-info_item __comments">12</div>
+										</div><!-- /.article-info -->
+									</div>
+								</div><!-- /.left-bar_link -->
+								
+								<div class="left-bar_link">
+									<a href="" class="left-bar_a">Как обыграть букмекера</a>
+									<div class="left-bar_links-data">
+										<div class="left-bar_date">19.10.2016 14:13</div>
+										<div class="article-info">
+											<div class="article-info_item __comments">12</div>
+										</div><!-- /.article-info -->
+									</div>
+								</div><!-- /.left-bar_link -->
+								
+								<div class="left-bar_link">
+									<a href="" class="left-bar_a">Почему не заходит на сайт БК</a>
+									<div class="left-bar_links-data">
+										<div class="left-bar_date">19.10.2016 14:13</div>
+										<div class="article-info">
+											<div class="article-info_item __comments">12</div>
+										</div><!-- /.article-info -->
+									</div>
+								</div><!-- /.left-bar_link -->
+							</div><!-- /.left-bar_links -->
+						</div><!-- /.left-bar_item -->
+					</div><!-- /.left-bar_inner -->
+				</aside><!-- /.left-bar -->
+				
+				<div class="content_main">
+					<div class="bread-crumbs">
+						<a href="">Главная</a> /
+						<span>Обзор букмерских контор</span>
+					</div><!-- /.bread-crumbs -->
+					
+					<h2 id="what">Как выиграть в онлайн-тотализаторе</h2>
+					
+					<div class="article-info __margin-medium">
+						<div class="article-info_item __view">123</div>
+						<div class="article-info_item __comments">12</div>
+						<div class="article-info_item __repost">43</div>
+					</div><!-- /.article-info -->
+					
+					<div class="article-before __margin-big">
+						<div>
+							<img src="img/article_img.jpg" alt="">
+							<p>Многие любители играть на тотализаторе полагаются скорее на удачу, чем на расчет и аналитику. Букмекеры обычно принимают ставки на отдельные события, а тотализаторы – на серию, и получить крупный выигрыш можно лишь правильно угадав исходы ряда событий.</p>
+							<p> одной стороны, потенциально заработок на тотализаторе более высокий, небольшая ставка может принести солидный выигрыш. С другой – вероятность угадать необходимое количество исходов из предложенного набора (например, 8 из 12, 9 из 15) мала. Мы поделимся с вами секретами, как можно заработать на тотализаторе.</p>
+						</div>
+						<div class="clear">
+							<p><strong>Содержание:</strong></p>
+							<ul class="content-list-preview js-content-list-preview">
+								<li><a href="#what">Что такое тотализатор?</a></li>
+								<li><a href="#strategy">Стратегия выигрыша на тотализаторе</a></li>
+								<li><a href="#how-earn">Как заработать на тотализатор</a></li>
+							</ul>
+						</div>
+					</div><!-- /.article-before -->
+					
+					<h2 id="strategy">Стратегии выигрыша на тотализаторе</h2>
+					
+					<p>Те, кто в принципе знает, как играть в тотализатор, понимает, что здесь игроки делают ставки друг против друга, и призовой фонд формируется за счет этих ставок. Букмекерские конторы выплачивают выигрыши из собственного кармана, поэтому нередко устанавливают лимиты, ограничивая возможности выигрыша опытных игроков. В тотализаторе таких ограничений нет, и везучий игрок может сорвать крупный куш, особенно если посчастливится выиграть джек-пот.</p>
+					
+					<p>Многие букмекеры принимают не только классические букмекерские ставки, но и предоставляют своим клиентам возможность сыграть на тотализаторе. При этом доступны не только лучшие онлайн-тотализаторы, но и бесплатные игры в виде бонуса для тех, кто делает ставки в букмекерской конторе. Если вы интересуетесь, как заработать на тотализаторе в интернете без дополнительных вложений, обратите внимание на БК Sportingbet с бесплатным футбольным тотализатором 8 из 12:</p>
 
+					<ul>
+						<li>каждая ставка на реальные деньги;</li>
+						<li>можно получить только 1 приз в неделю за самый успешный прогноз;</li>
+						<li>разыгрываются бесплатные ходы в казино.</li>
+					</ul>
+					<p>Также большой популярностью пользуются такие тотализаторы от букмекеров:</p>
+					<ul>
+						<li>«Фонбет» – 9 из 15;</li>
+						<li>1xbet – 6 разных тотализаторов;</li>
+						<li> «Марафон» – имеет самым высокий рейтинг; 3 простых тотализатора с крупными джек-потами</li>
+					</ul>
+					<br>
+					<h2 id="how-earn">Как заработать на тотализаторе</h2>
+					
+					<figure>
+						<img src="img/photo.jpg" alt="">
+						<figcaption>Лучшие онлайн тотализаторы 2016 года</figcaption>
+					</figure>
+					<br>
+					<p>Есть ли универсальные советы о том, как «сделать» тотализатор, то есть выиграть приз? Основная проблема состоит в том, как угадать в тотализаторе максимально возможное количество исходов. Для этого нужно:</p>
+					
+					<ul>
+						<li>по каждому событию изучать статистику, использовать прогнозы;</li>
+						<li>анализировать ставки других игроков;</li>
+						<li>выделить из набора несколько событий, в исходе которых вы точно уверены, в остальных случаях ставить на несколько исходов, затраты при этом возрастают, но риск проигрыша снижается.</li>
+					</ul>
+					
+					<div class="content_bg-text" style="background-image: url(img/inner-bg.jpg)">
+						Если вас волнует не только, как выиграть в тотализаторе, но и как не проиграться, 
+изучите финансовые стратегии распределения денег на ставки в пределах игрового банка.
+					</div><!-- /.content_bg-text -->
+					
+					<p>Те, кто в принципе знает, как играть в тотализатор, понимает, что здесь игроки делают ставки друг против друга, и призовой фонд формируется за счет этих ставок. Букмекерские конторы выплачивают выигрыши из собственного кармана, поэтому нередко устанавливают лимиты, ограничивая возможности выигрыша опытных игроков. В тотализаторе таких ограничений нет, и везучий игрок может сорвать крупный куш, особенно если посчастливится выиграть джек-пот.</p>
+					
+					<div class="article-bottom">
+						<div class="article-bottom_item">
+							<strong>Оцените статью: </strong>
+							<div class="stars __editable js-stars">
+								<div class="stars_item"></div>
+								<div class="stars_item"></div>
+								<div class="stars_item"></div>
+								<div class="stars_item __empty"></div>
+								<div class="stars_item __empty"></div>
+							</div>
+						</div>
+						<div class="article-bottom_item">
+							<strong>Поделиться:</strong>
+						</div>
+					</div><!-- /.article-bottom -->
+					
+					<div class="tags">
+						<span class="tags_text">Теги</span>
+						
+						<div class="tags_items">
+							<a href="" class="tags_item __active">Футбол</a>
+							<a href="" class="tags_item">Чеомпионат Европы 2016</a>
+							<a href="" class="tags_item">Сборная Англии</a>
+							<a href="" class="tags_item">Сборная Испании</a>
+						</div><!-- /.tags_items -->
+					</div><!-- /.tags -->
+					
+					<div id="disqus_thread"></div>
+					<script>
+						(function () {
+							var d = document, s = d.createElement('script');
+							s.src = '//http-nltsm-ru-test-article-html.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+						})();
+					</script>
+					
+					<br>
+					<br>
+					<h2>Прогнозы и ставки на сегодня</h2>
+					
+					<div class="news">
+						<div class="news_items">
+							<article class="news_item">
+								<div class="news_image">
+									<a href=""><img src="img/news.jpg" alt=""></a>
+								</div><!-- /.news_image -->
+								<div class="news_content">
+									<p class="news_descr">Прогноз и ставки на матч:</p>
+									<a class="news_title" href="">Шальке - Майнц</a>
+									<div class="news_what">Чемпионат Германии</div>
+									
+									<div class="news_date">
+										<em class="news_date-text">19.10.2016  14:13 (МСК)</em>
+										<div class="news_koef">К: 1,92</div>
+									</div><!-- /.news_date -->
+								</div><!-- /.news_content -->
+								<a href="" class="news_category-wrapper">
+									<span class="news_category">Футбол</span>
+								</a>
+							</article><!-- /.news_item -->
+							<article class="news_item">
+								<div class="news_image">
+									<a href=""><img src="img/news.jpg" alt=""></a>
+								</div><!-- /.news_image -->
+								<div class="news_content">
+									<p class="news_descr">Прогноз и ставки на матч:</p>
+									<a class="news_title" href="">Барселона - Манчестер Сити</a>
+									<div class="news_what">Чемпионат Германии</div>
+									
+									<div class="news_date">
+										<em class="news_date-text">19.10.2016  14:13 (МСК)</em>
+										<div class="news_koef">К: 1,92</div>
+									</div><!-- /.news_date -->
+								</div><!-- /.news_content -->
+								<a href="" class="news_category-wrapper">
+									<span class="news_category">Футбол</span>
+								</a>
+							</article><!-- /.news_item -->
+							<article class="news_item">
+								<div class="news_image">
+									<a href=""><img src="img/news.jpg" alt=""></a>
+								</div><!-- /.news_image -->
+								<div class="news_content">
+									<p class="news_descr">Прогноз и ставки на матч:</p>
+									<a class="news_title" href="">Шальке - Майнц</a>
+									<div class="news_what">Чемпионат Германии</div>
+									
+									<div class="news_date">
+										<em class="news_date-text">19.10.2016  14:13 (МСК)</em>
+										<div class="news_koef">К: 1,92</div>
+									</div><!-- /.news_date -->
+								</div><!-- /.news_content -->
+								<a href="" class="news_category-wrapper">
+									<span class="news_category">Футбол</span>
+								</a>
+							</article><!-- /.news_item -->
+							<article class="news_item">
+								<div class="news_image">
+									<a href=""><img src="img/news.jpg" alt=""></a>
+								</div><!-- /.news_image -->
+								<div class="news_content">
+									<p class="news_descr">Прогноз и ставки на матч:</p>
+									<a class="news_title" href="">Шальке - Майнц</a>
+									<div class="news_what">Чемпионат Германии</div>
+									
+									<div class="news_date">
+										<em class="news_date-text">19.10.2016  14:13 (МСК)</em>
+										<div class="news_koef">К: 1,92</div>
+									</div><!-- /.news_date -->
+								</div><!-- /.news_content -->
+								<a href="" class="news_category-wrapper">
+									<span class="news_category">Футбол</span>
+								</a>
+							</article><!-- /.news_item -->
+							<article class="news_item">
+								<div class="news_image">
+									<a href=""><img src="img/news.jpg" alt=""></a>
+								</div><!-- /.news_image -->
+								<div class="news_content">
+									<p class="news_descr">Прогноз и ставки на матч:</p>
+									<a class="news_title" href="">Шальке - Майнц</a>
+									<div class="news_what">Чемпионат Германии</div>
+									
+									<div class="news_date">
+										<em class="news_date-text">19.10.2016  14:13 (МСК)</em>
+										<div class="news_koef">К: 1,92</div>
+									</div><!-- /.news_date -->
+								</div><!-- /.news_content -->
+								<a href="" class="news_category-wrapper">
+									<span class="news_category">Футбол</span>
+								</a>
+							</article><!-- /.news_item -->
+							<article class="news_item">
+								<div class="news_image">
+									<a href=""><img src="img/news.jpg" alt=""></a>
+								</div><!-- /.news_image -->
+								<div class="news_content">
+									<p class="news_descr">Прогноз и ставки на матч:</p>
+									<a class="news_title" href="">Шальке - Майнц</a>
+									<div class="news_what">Чемпионат Германии</div>
+									
+									<div class="news_date">
+										<em class="news_date-text">19.10.2016  14:13 (МСК)</em>
+										<div class="news_koef">К: 1,92</div>
+									</div><!-- /.news_date -->
+								</div><!-- /.news_content -->
+								<a href="" class="news_category-wrapper">
+									<span class="news_category">Футбол</span>
+								</a>
+							</article><!-- /.news_item -->
+						</div><!-- /.news_items -->
+						
+						<div class="news_btn">
+							<a href="" class="button">Все прогнозы</a>
+						</div><!-- /.news_btn -->
+					</div><!-- /.news -->
+				</div><!-- /.content_main -->
+			</div><!-- /.wrapper -->
+		</div><!-- /.content -->
+		
+		<footer class="footer js-footer">
+			<div class="wrapper">
+				<div class="footer_top">
+					<div class="footer_logo">
+						<a href="" class="logo">
+							<img src="img/logo_white.png" alt="" width="250" height="44">
+						</a>
+					</div><!-- /.footer_logo -->
+					<nav class="footer_nav">
+						<ul class="footer_list">
+							<li><a href="">Правила пользования сайтом</a></li>
+							<li><a href="">Политика конфиденциальности</a></li>
+							<li><a href="">О нас</a></li>
+							<li><a href="">Контакты</a></li>
+							<li><a href="">Карта сайта</a></li>
+						</ul>
+					</nav><!-- /.footer_nav -->
+				</div><!-- /.footer_top -->
+				
+				<div class="footer_bottom">
+					<div class="footer_text">
+						ONB не занимается организацией и проведением азартных игр. Информация на сайте носит ознакомительный характер.<br> Copyright 2016. Все права защищены
+					</div><!-- /.footer_text -->
+					
+					<a href=""><img src="img/footer_count.png" alt=""></a>
+				</div><!-- /.footer_bottom -->
+			</div><!-- /.wrapper -->
+		</footer><!-- /.footer -->
+	</div><!-- /.container -->
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
