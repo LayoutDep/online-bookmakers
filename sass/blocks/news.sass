@@ -31,6 +31,9 @@
 	padding: 16px 20px 67px
 	border-top: none
 		
+	&.__padding-min
+		padding-bottom: 55px
+		
 .news_descr
 	margin-bottom: 3px
 	
@@ -49,7 +52,7 @@
 	font-size: 13px
 	color: #000
 	
-.news_date
+.news_date, .news_bottom
 	display: flex
 	justify-content: space-between
 	align-items: center
@@ -78,3 +81,22 @@
 	
 .news_btn
 	text-align: center
+	
+.news_date-main
+	font: 13px 'OpenSansRegular'
+	margin-bottom: 10px
+	color: #808080
+	
+.news_big-title
+	font: 13px/15px 'OpenSansSemibold'
+	color: #666666
+	text-decoration: none
+	transition: .3s
+	margin-bottom: 5px
+	display: block
+	
+	&:hover
+		color: $blue
+.news_what-descr
+	font-size: 13px
+	color: #666666
