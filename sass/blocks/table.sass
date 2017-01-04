@@ -80,7 +80,7 @@
 	+respond-to($mobile)
 		width: 96%
 		
-.table.__blue .table_tr
+.table.__blue tr
 	&:nth-child(2n)
 		background: #f7f7f7
 
@@ -151,16 +151,19 @@
 .table.__blue .table_td, .table.__blue .table_th
 	&.__image
 		border-left: none
-		width: 25%
 		
+	&.__link
+		padding-left: 20px
+	
+.table.__part .table_td, .table.__part .table_th
+	&.__image
+		border-left: none
+		width: 25%
 	&.__bonus
 		width: 20%
 		
 	&.__min
 		width: 8%
-		
-	&.__link
-		padding-left: 20px
 		
 .table_small
 	font: 12px/1 'OpenSansRegular'
