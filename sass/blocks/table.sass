@@ -1,3 +1,21 @@
+.table-wrapper
+	
+.table-wrapper_bottom
+	font: 14px/1 'OpenSansRegular'
+	color: #808080
+	margin-top: 15px
+	
+	span
+		margin-right: 20px
+
+.table_show-all
+	color: #227496
+	
+	&:hover
+		text-decoration: none
+	
+	
+	
 .table, .table tr, .table thead, .table tbody, .table td, .table th
 	+respond-to($desktop)
 		display: block
@@ -8,12 +26,23 @@
 	text-align: center
 	font: 16px 'OpenSansSemibold'
 	
+	&.__blue
+		border-bottom: 1px solid #e5e5e5
+		border-right: 1px solid #e5e5e5
+		font: 15px/1 'OpenSansRegular'
+		
+		+respond-to($desktop)
+			font: 16px 'OpenSansSemibold'
+	
 .table thead
 	font: 16px/1 'OpenSansSemibold'
 	background: rgba(51, 82, 148, .8)
 	
 	+respond-to($desktop)
 		display: none
+		
+.table.__blue thead
+	background: $blue
 	
 .table tbody
 	background: rgba(0, 0, 0, .5)
@@ -23,12 +52,22 @@
 		justify-content: center
 		flex-wrap: wrap
 		padding: 10px 0 0
+		
+.table.__blue tbody
+	background: none
+	color: $black
 
 .table_th
 	height: 55px
 	vertical-align: middle
+	
+.table.__blue .table_th
+	border-left: 1px solid #2e4a85
 
 .table tr
+	&:nth-child(2n)
+		background: #f7f7f7
+	
 	+respond-to($desktop)
 		border: 1px solid $lightGray
 		padding: 10px
@@ -50,7 +89,13 @@
 	+respond-to($desktop)
 		display: table
 		width: 100% !important
+		
+.table.__blue td
+	border-left: 1px solid #e5e5e5
 	
+	+respond-to($desktop)
+		border-left: none
+
 .table_heading, .table_content
 	display: table-cell
 	text-align: center
@@ -101,12 +146,32 @@
 	&.__link
 		text-align: left
 		
+.table.__blue .table_td, .table.__blue .table_th
+	&.__image
+		border-left: none
+		width: 25%
+		
+	&.__bonus
+		width: 20%
+		
+	&.__min
+		width: 8%
+		
+	&.__link
+		padding-left: 20px
+		
 .table_small
 	font: 12px/1 'OpenSansRegular'
 	
 	+respond-to($desktop)
 		display: inline
 		font-size: 16px
+		
+	.table.__blue &
+		margin-top: 3px
+		
+		+respond-to($desktop)
+			font-size: 12px
 
 .table_title
 	font: 16px/1 OpenSansSemibold
@@ -116,6 +181,14 @@
 	
 	&:hover
 		color: $lightBlue
+		
+	.table.__blue &
+		color: $black
+		font: 15px/1 'OpenSansRegular'
+		
+		&:hover
+			color: $lightBlue
+		
 	
 .table_btn
 	width: 160px
@@ -151,11 +224,28 @@
 		text-align: center
 		padding: 3px 0 0
 		
+	.table.__blue &
+		color: $blue
+		text-decoration: none
+		font: 15px/1 'OpenSansRegular'
+		
+		+respond-to($desktop)
+			text-align: left
+		
+		&:hover
+			text-decoration: underline
+		
 .table_stars
 	padding-left: 18px
 	
 	+respond-to($desktop)
 		padding-left: 0
+		
+	.table.__blue &
+		padding: 0 15px
+		
+		+respond-to($desktop)
+			padding-left: 0
 		
 .table_image
 	width: 82px
@@ -163,3 +253,18 @@
 	
 	img
 		max-width: 87%
+		
+.table_up
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjEuMyAyMy4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMS4zIDIzLjI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojMzU1Mzk1O308L3N0eWxlPjxnPjxnPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMC4zLDljLTAuMiwwLTAuNC0wLjEtMC42LTAuMmwtOS02LjVsLTksNi41QzEuMyw5LjEsMC43LDksMC4zLDguNUMwLDguMSwwLjEsNy41LDAuNSw3LjFsOS42LTdjMC4zLTAuMywwLjgtMC4zLDEuMiwwbDkuNiw3YzAuNCwwLjMsMC41LDEsMC4yLDEuNEMyMC45LDguOCwyMC42LDksMjAuMyw5TDIwLjMsOXoiLz48L2c+PGc+PHBhdGggY2xhc3M9InN0MCIgZD0iTTEwLjcsMjMuMmMtMC42LDAtMS0wLjQtMS0xVjFjMC0wLjYsMC40LTEsMS0xYzAuNiwwLDEsMC40LDEsMXYyMS4yQzExLjcsMjIuNywxMS4zLDIzLjIsMTAuNywyMy4yTDEwLjcsMjMuMnoiLz48L2c+PC9nPjwvc3ZnPg==)
+	background-size: 12px 13px
+	display: inline-block
+	width: 12px
+	height: 13px
+
+.table_down
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjEuMyAyMy4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMS4zIDIzLjI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojRkYzMjBBO308L3N0eWxlPjxnPjxnPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMC4zLDljLTAuMiwwLTAuNC0wLjEtMC42LTAuMmwtOS02LjVsLTksNi41QzEuMyw5LjEsMC43LDksMC4zLDguNUMwLDguMSwwLjEsNy41LDAuNSw3LjFsOS42LTdjMC4zLTAuMywwLjgtMC4zLDEuMiwwbDkuNiw3YzAuNCwwLjMsMC41LDEsMC4yLDEuNEMyMC45LDguOCwyMC42LDksMjAuMyw5TDIwLjMsOXoiLz48L2c+PGc+PHBhdGggY2xhc3M9InN0MCIgZD0iTTEwLjcsMjMuMmMtMC42LDAtMS0wLjQtMS0xVjFjMC0wLjYsMC40LTEsMS0xYzAuNiwwLDEsMC40LDEsMXYyMS4yQzExLjcsMjIuNywxMS4zLDIzLjIsMTAuNywyMy4yTDEwLjcsMjMuMnoiLz48L2c+PC9nPjwvc3ZnPg==)
+	background-size: 12px 13px
+	display: inline-block
+	width: 12px
+	height: 13px
+	transform: rotate(180deg)
