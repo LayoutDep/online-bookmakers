@@ -24,8 +24,71 @@
 	margin-bottom: 16px
 	color: $black
 	border-bottom: 1px solid $blue
-
+	
+	&.__no-border
+		border-bottom: none
+		margin-bottom: 5px
+	&.__no-padding
+		padding-bottom: 0
 		
+.left-bar_descr
+	color: $black
+	margin-bottom: 20px
+	
+.left-bar_image
+	position: relative
+	overflow: hidden
+	margin-bottom: 20px
+	
+.left-bar_rating
+	display: flex
+	align-items: center
+	margin-bottom: 5px
+	
+	&.__margin_medium
+		margin-bottom: 10px
+	
+	span
+		margin-right: 10px
+		
+.left-bar_info
+	border: 1px solid #dedede
+	background: $white
+	padding: 12px 12px 5px
+	margin-bottom: 15px
+	
+.left-bar_info-item
+	margin-bottom: 7px
+	display: flex
+	justify-content: space-between
+	
+.left-bar_book-links
+	display: flex
+	justify-content: space-between
+	align-items: center
+	
+.left-bar_book-link
+	font-size: 11px
+	text-align: center
+	
+	&.__button
+		padding-left: 10px
+		padding-right: 10px
+		
+	&.__a
+		flex-grow: 1
+		color: #227496
+		
+		&:hover
+			text-decoration: none
+		
+	
+.left-bar_image-wrapper
+	+typeArticleWrapper()
+	
+.left-bar_image-category
+	+typeArticle()
+
 .left-bar_inner
 	+respond-to($desktop)
 		height: 100%
