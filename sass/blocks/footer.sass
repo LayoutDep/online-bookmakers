@@ -1,0 +1,61 @@
+.footer
+	background: $black
+	padding: 40px 0
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	
+.footer_top
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 10px
+	
+	+respond-to(900px)
+		display: block
+.footer_logo
+	+respond-to(900px)
+		text-align: center
+.footer_list
+	display: flex
+	position: relative
+	top: -3px
+	
+	+respond-to(900px)
+		top: 0
+		margin-top: 20px
+		flex-wrap: wrap
+		justify-content: center
+	
+.footer_list li
+	margin: 0 18px
+	
+	&:last-child
+		margin-right: 0
+		
+.footer_list a
+	font: 15px/1 'RobotoRegular'
+	color: $white
+	
+	&:hover
+		text-decoration: none
+		
+	+respond-to(900px)
+		padding: 10px
+		display: block
+		
+.footer_bottom
+	display: flex
+	justify-content: space-between
+	
+	+respond-to($mobile)
+		display: block
+		text-align: center
+	
+.footer_text
+	font: 13px/1.2 'OpenSansRegular'
+	color: #b1abab
+	
+	+respond-to($mobile)
+		margin-bottom: 10px
