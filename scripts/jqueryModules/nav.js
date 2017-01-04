@@ -3,6 +3,11 @@
  */
 app.addModule('nav', function () {
 	var $nav = $('.js-nav');
+	
+	if (!$nav.length) {
+		return false;
+	}
+	
 	var $menuList = $nav.find('.nav_list');
 	var $dropDownOpenLinks = $nav.find('.nav_dropdown > a');
 	var $dropDownList = $nav.find('.nav_inner-list');
