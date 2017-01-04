@@ -11,6 +11,9 @@ app.addModule('content-list-preview', function () {
 		e.preventDefault();
 		
 		$block = $ ( $(this).attr('href') );
-		$('html, body').animate({scrollTop: $block.offset().top})
+		
+		if ($block.length) {
+			$('html, body').animate({scrollTop: $block.offset().top})
+		}
 	});
 });
