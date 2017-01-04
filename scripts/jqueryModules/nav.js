@@ -16,13 +16,13 @@ app.addModule('nav', function () {
 	$dropDownOpenLinks.on('click', function () {
 		var windowWidth = $(window).width();
 		if (windowWidth <= app.data.media.desktop) {
-			$(this).closest('.nav_dropdown').find($dropDownList).fadeToggle(200);
+			$(this).closest('.nav_dropdown').find($dropDownList).toggle();
 		}
 		return false;
 	});
 	
 	$openMenuBtn.on('click', function () {
-		$menuList.fadeToggle(200);
+		$menuList.toggle();
 		return false;
 	});
 	
