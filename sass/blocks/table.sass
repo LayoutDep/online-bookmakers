@@ -65,8 +65,6 @@
 	border-left: 1px solid #2e4a85
 
 .table tr
-	&:nth-child(2n)
-		background: #f7f7f7
 	
 	+respond-to($desktop)
 		border: 1px solid $lightGray
@@ -81,6 +79,10 @@
 		
 	+respond-to($mobile)
 		width: 96%
+		
+.table.__blue .table_tr
+	&:nth-child(2n)
+		background: #f7f7f7
 
 .table td
 	vertical-align: middle
