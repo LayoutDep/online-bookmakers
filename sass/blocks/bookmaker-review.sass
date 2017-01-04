@@ -1,62 +1,102 @@
 .bookmaker-review_item
-	margin-bottom: 20px
+	margin-bottom: 14px
 	border: 1px solid #d9d9d9
 	display: flex
+	+respond-to($mobile)
+		flex-direction: column
+		align-items: center
 .bookmaker-review_image
 	width: 25.6%
-	vertical-align: top	
+	vertical-align: top
+	+respond-to($mobile)
+		width: 44.6%
 .bookmaker-review_image img
-	height: 200px	
+	height: 100%
+	+respond-to($tablet)
+		height: 100%
 .bookmaker-review_description
 	width: 51.25%
 	font-family: 'RobotoRegular', sans-serif
-	padding-top: 20px 
+	padding-top: 20px
+	+respond-to($mobile)
+		width: 100%
 .bookmaker-review_rating
 	width: 22.77%
+	+respond-to($tablet)
+		width: 21.6%
 .bookmaker-review_header-link
 	color: #333333
 	font-size: 20px
-	margin-left: 15px
+	margin-left: 25px
 	text-decoration: none
+	+respond-to($tablet)
+		margin-left: 15px
+		font-size: 16px
 .bookmaker-review_description p
 	font-size: 14px
 	line-height: 18px
 	color: #595959
 	font-family: 'OpenSansRegular', sans-serif
-	margin-left: 15px
+	margin-left: 24px
 	margin-top: 12px
+	+respond-to($tablet)
+		font-size: 12px
+		margin-left: 15px
 .bookmaker-review_further a
 	float: left
 	color: #227496
 	font-size: 14px
 	font-family: 'OpenSansRegular', sans-serif
-	margin-left: 15px
+	margin-left: 24px
+	text-decoration: none
+	+respond-to($tablet)
+		margin-left: 15px
+		font-size: 12px
 .bookmaker-review_further .article-info 
 	float: right
 .bookmaker-review_rating
 	text-align: center
+	justify-content: center
+	+respond-to($mobile)
+		width: 100%
+		justify-content: flex-start
+		margin-bottom: 10px
 .bookmaker-review_rating .stars
-	padding-left: 54px
+	justify-content: center
 	margin-bottom: 20px
+	+respond-to($mobile)
+		margin-bottom: 0
 .bookmaker-review_name-rating
 	font-size: 14px
 	font-family: 'OpenSansRegular', sans-serif
 	margin: 20px 0
+	+respond-to($mobile)
+		margin: 0px 5px
 .book-review_price
 	display: block
 	font-size: 24px
 	font-family: 'OpenSansRegular', sans-serif
-	margin-bottom: 20px
-	margin-top: 5px	
+	margin-bottom: 18px
+	+respond-to($mobile)
+		margin: 0 10px 18px
+
 .bookmaker-review_button .button
-	width: 135px
 	font-size: 13px
-	margin: 0 auto
+	padding: 4px 8px
+	+respond-to($tablet)
+		font-size: 10px
 .bookmaker-review_vertical-line
-	 width: 1px
-	 height: 150px
-	 margin-top: 25px
-	 background-color: #d9d9d9
-	 margin-left: 20px
+	width: 1px
+	height: 150px
+	margin-top: 25px
+	background-color: #d9d9d9
+	margin-left: 20px
+	+respond-to($mobile)
+		display: none
+.bookmaker-review_h
+	margin-bottom: 24px
+.bookmaker-review .article-info_item
+  margin-right: 10px
+
 
 
