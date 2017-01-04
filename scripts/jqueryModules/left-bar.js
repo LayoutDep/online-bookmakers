@@ -16,7 +16,7 @@ app.addModule('left-bar', function () {
 		responsiveOverlay();
 	}
 	
-	$listItem.on('click', function (e) {
+	/*$listItem.on('click', function (e) {
 		var $innerListActive = $(this).find($innerList);
 		
 		if ($innerListActive.length) {
@@ -27,7 +27,7 @@ app.addModule('left-bar', function () {
 			}
 			return false;
 		}
-	});
+	});*/
 	
 	$openBtn.on('click', function () {
 		toggleMenu();

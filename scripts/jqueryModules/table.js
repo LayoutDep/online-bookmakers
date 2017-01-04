@@ -20,7 +20,7 @@
 			});
 			
 			function check() {
-				var windowWidth = $(window).width();
+				var windowWidth = $(window).outerWidth();
 				
 				if (windowWidth < settings.adaptiveWidth) {
 					if (!made) {
