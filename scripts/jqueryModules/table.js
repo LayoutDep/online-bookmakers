@@ -66,12 +66,31 @@
 
 app.addModule('table', function () {
 	var $table = $('.js-table');
-	
+	var $tableWrapper = $table.closest('.js-table-wrapper');
+	var $button = $tableWrapper.find('.table_show-all');
+
 	if (!$table.length) {
 		return false;
 	}
 	
 	$table.stacktable({
 		adaptiveWidth: app.data.media.desktop
+	});
+	
+	$button.on('click', function (e) {
+		var $thisTableWrapper = $(this).closest($tableWrapper)
+		var $thisTable = $thisTableWrapper.find($table);
+		var $tr = $thisTable.find('tbody tr[hidden]');
+		$tr.slice(0, 9).removeAttr('hidden');
+		$tr = $thisTable.find('tbody tr[hidden]');
+		
+		$thisTableWrapper.find('.table-wrapper_count').html( $thisTable.find('tbody tr:not(hidden)').length );
+		
+		
+		if (!$tr.length) {
+			$(this).remove();
+		}
+		
+		return false;
 	});
 });

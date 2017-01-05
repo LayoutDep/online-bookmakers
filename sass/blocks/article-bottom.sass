@@ -14,6 +14,16 @@
 .article-bottom_item
 	overflow: hidden
 	
+	&.__share
+		display: flex
+		align-items: center
+		
+		li
+			margin-left: 4px
+			padding-left: 0
+			&:before
+				content: none
+	
 	+respond-to($desktop)
 		margin-bottom: 20px
 		
