@@ -5,8 +5,16 @@
 	color: #808080
 	margin-top: 15px
 	
+	+respond-to($mobile)
+		text-align: center
+	
 	span
 		margin-right: 20px
+		
+		+respond-to($mobile)
+			display: block
+			margin-right: 0
+			margin-bottom: 10px
 
 .table_show-all
 	color: #227496

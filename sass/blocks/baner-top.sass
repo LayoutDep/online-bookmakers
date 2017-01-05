@@ -1,26 +1,44 @@
 .baner-top
-  margin-bottom: 30px
+	margin-bottom: 30px
+	margin-top: -20px
+
 .baner-top_item-one
-  margin-bottom: 20px
-  +respond-to($mobile)
-    margin-bottom: 10px
+	margin-bottom: 20px
+	+respond-to($mobile)
+		margin-bottom: 10px
+
 .baner-top_item-one img
-  width: 100%
-  +respond-to($mobile)
+	width: 100%
+	
+	+respond-to($mobile)
+		width: 70%
+		margin-left: auto
+		margin-right: auto
+		display: block
+		
+	+respond-to(400px)
+		width: 100%
 
 .baner-top_item-two
-  display: flex
-  justify-content: space-between
-  +respond-to($mobile)
-    flex-direction: column
-    justify-content: center
+	display: flex
+	justify-content: space-between
+	+respond-to($mobile)
+		flex-direction: column
+		justify-content: center
+
 .baner-top_item-two a
-  width: 31.5%
-  +respond-to($mobile)
-    text-align: center
-    margin-bottom: 10px
-  +respond-to($mobile)
-    width: 100%
+	width: 31.5%
+	
+	+respond-to($mobile)
+		text-align: center
+		margin-bottom: 10px
+		width: 70%
+		margin-left: auto
+		margin-right: auto
+		
+	+respond-to(400px)
+		width: 100%
+
 .baner-top_item-two a img
-  width: 100%
+	width: 100%
 
