@@ -10,10 +10,15 @@ app.addModule('content-list-preview', function () {
 	$links.on('click', function (e) {
 		e.preventDefault();
 		
-		$block = $ ( $(this).attr('href') );
+		var $block = $ ( $(this).attr('href') );
 		
 		if ($block.length) {
-			$('html, body').animate({scrollTop: $block.offset().top})
+			if ($block.hasClass('bookmaker-review_menu')) {
+				$block.addClass('__active');
+				$block.find('.bookmaker-review_head').addClass('bookmaker-review_head_active');
+			}
+			
+			$('html, body').animate({scrollTop: $block.offset().top});
 		}
 	});
 });
