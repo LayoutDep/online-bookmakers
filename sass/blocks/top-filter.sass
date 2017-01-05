@@ -1,0 +1,62 @@
+.top-filter
+  display: flex
+  justify-content: space-between
+  margin-bottom: 22px
+  background-color: #f2f2f2
+  padding: 8px 25px
+  align-items: center
+  +respond-to($tablet)
+    justify-content: center
+    flex-direction: column
+.top-filter_item
+  display: flex
+  justify-content: space-between
+  +respond-to($tablet)
+    margin-bottom: 10px
+    justify-content: space-around
+  +respond-to($mobile)
+    justify-content: center
+    text-align: center
+
+.top-filter_item-left
+  width: 60%
+  +respond-to($tablet)
+    width: 100%
+  +respond-to($mobile)
+    flex-direction: column
+.top-filter_item-right
+  justify-content: flex-end
+  width: 40%
+  align-items: center
+  +respond-to($tablet)
+    width: 100%
+    justify-content: center
+.top-filter_s,
+.top-filter_link
+  font-size: 15px
+  color: #333333
+  text-decoration: none
+  font-family: 'OpenSansRegular'
+.top-filter_link-active
+  font-weight: bold
+.top-filter_link
+  &:hover
+    text-decoration: underline
+.top-filter_link:first-child
+  margin-left: 5px
+.__margin-right
+  margin-right: 10px
+.top-filter_select
+  border-bottom: dotted 1px #333333
+  background-color: #f2f2f2
+  font-weight: bold
+  font-family: 'OpenSansRegular'
+  font-size: 15px
+  border-top: none
+  border-left: none
+  border-right: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  cursor: pointer
+
