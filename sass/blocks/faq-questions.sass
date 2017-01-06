@@ -1,0 +1,55 @@
+.faq-questions
+	margin-bottom: -20px
+	
+.faq-questions_item
+	padding: 20px
+	border: 1px solid #e5e5e5
+	margin-bottom: 20px
+	
+.faq-questions_content
+	display: flex
+	flex-wrap: wrap
+	
+	+respond-to($desktop)
+		justify-content: space-between
+		
+	+respond-to($tablet)
+		justify-content: space-around
+	
+.faq-questions_title
+	font: bold 20px 'OpenSansRegular'
+	margin-bottom: 15px
+	color: $black
+	
+	+respond-to($tablet)
+		text-align: center
+
+.faq-questions_content a
+	font: 14px 'OpenSansRegular'
+	color: #227496
+	display: inline-block
+	margin-bottom: 9px
+	
+	&:hover
+		text-decoration: none
+		
+	+respond-to($desktop)
+		padding: 5px
+
+.faq-questions_content a:nth-child(3n + 1)
+	width: 35%
+	
+	+respond-to($desktop)
+		width: auto
+	
+.faq-questions_content a:nth-child(3n + 2)
+	width: 35%
+	
+	+respond-to($desktop)
+		width: auto
+	
+.faq-questions_content a:nth-child(3n + 3)
+	width: 30%
+	
+	+respond-to($desktop)
+		width: auto

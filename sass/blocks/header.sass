@@ -149,6 +149,24 @@
 	+respond-to($tablet)
 		order: 5
 		width: 100%
+		
+.header_search-none
+	position: absolute
+	top: 33px
+	font-size: 10px
+	color: $red
+	width: 100%
+	text-align: center
+	display: none
+	
+	&.__visible
+		display: block
+		
+		+respond-to($desktop)
+			display: none
+		
+	+respond-to($desktop)
+		display: none
 	
 .header_search-btn
 	width: 30px

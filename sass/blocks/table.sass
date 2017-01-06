@@ -132,6 +132,11 @@
 		padding-left: 17px
 		text-align: left
 		
+	&.__num-min
+		width: 3%
+		padding: 0
+		text-align: center
+		
 	&.__image
 		width: 17.3%
 		text-align: left
@@ -153,6 +158,9 @@
 		text-align: left
 		padding-left: 10px
 		
+	&.__center
+		text-align: center
+		
 	&.__link
 		text-align: left
 		
@@ -162,6 +170,22 @@
 		
 	&.__link
 		padding-left: 20px
+		
+.table.__blue .table_td
+	&.__image-bordered
+		border-left: 1px solid #e5e5e5
+		padding-left: 13px
+		
+		+respond-to($desktop)
+			border-left: none
+
+.table.__blue .table_th
+	&.__image-bordered
+		border-left: 1px solid #2e4a85
+		padding-left: 13px
+		
+		+respond-to($desktop)
+			border-left: none
 	
 .table.__part .table_td, .table.__part .table_th
 	&.__image
