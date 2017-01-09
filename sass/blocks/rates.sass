@@ -1,0 +1,60 @@
+.rates
+	margin: 20px 0 10px
+	display: flex
+	justify-content: space-between
+	
+	+respond-to($tablet)
+		flex-wrap: wrap
+	
+.rates_item
+	padding: 20px
+	background: #f7f7f7
+	width: 48%
+	margin-bottom: 20px
+	
+	+respond-to($tablet)
+		width: 100%
+	
+.rates_title
+	font: 20px/1 'RobotoRegular'
+	margin-bottom: 20px
+	
+.rates_middle
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 20px
+	
+.rates_text
+	font: 14px/1 'OpenSansRegular'
+	color: #595959
+	
+.rates_logo img
+	max-width: 120px
+	max-height: 40px
+	
+.rates_bottom
+	display: flex
+	justify-content: space-between
+	align-items: center
+	
+	+respond-to($desktop)
+		flex-wrap: wrap
+	
+.rates_koef
+	color: $white
+	font-size: 13px
+	padding: 1px 5px
+	background: $red
+	
+.rates_button
+	+respond-to($desktop)
+		width: 100%
+		margin-top: 10px
+		
+	+respond-to($tablet)
+		width: auto
+		
+	+respond-to($tablet)
+		width: 100%
+		margin-top: 10px

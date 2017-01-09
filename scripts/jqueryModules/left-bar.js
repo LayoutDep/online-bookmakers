@@ -39,14 +39,24 @@ app.addModule('left-bar', function () {
 	
 	app.data.swipe({
 		left: function () {
-			if (isVisible) {
-				hideMenu();
+			if ($(window).width() < app.data.media.desktop) {
+				if (isVisible) {
+					hideMenu();
+				}
 			}
 		},
 		right: function () {
-			if (!isVisible) {
-				showMenu();
+			if ($(window).width() < app.data.media.desktop) {
+				if (!isVisible) {
+					showMenu();
+				}
 			}
+		}
+	});
+	
+	$(window).on('resize', function () {
+		if ($(window).width() > app.data.media.desktop) {
+			hideMenu();
 		}
 	});
 	

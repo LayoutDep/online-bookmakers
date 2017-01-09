@@ -9,17 +9,21 @@ app.addModule('stars', function () {
 	
 	$items.on('click', function () {
 		var $this = $(this);
+		var url = $this.data('url');
 		var index = $(this).index() + 1;
 		var $parent = $this.closest($stars);
 		$parent.removeClass('__editable js-stars');
 		$parent.find($items).off('mouseenter').off('mouseleave');
 		
 		$.ajax({
-			url: 'test.php',
+			url: url,
 			type: 'POST',
-			data: { star: index },
+			data: { 
+				star: index,
+				type: $this.data('type'),
+				id: $this.data('id')
+			},
 			success: function (value) {
-				console.log(value);
 				value = +value;
 				value = Math.round( value );
 				

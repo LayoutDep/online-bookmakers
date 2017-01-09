@@ -1,0 +1,134 @@
+.match
+	height: 351px
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	margin-bottom: 40px
+	display: flex
+	justify-content: space-between
+	padding-top: 60px
+	
+	+respond-to($tablet)
+		display: block
+		height: auto
+		padding: 20px
+	
+.match_item
+	+respond-to($tablet)
+		display: flex
+		align-items: center
+		justify-content: space-between
+		text-align: center
+		
+	+respond-to($mobile)
+		display: block
+		
+	&:first-child
+		margin-left: 70px
+		
+		+respond-to($desktop)
+			margin-left: 20px
+			
+		+respond-to($tablet)
+			margin-left: 0
+			
+		
+	&:nth-child(2)
+		text-align: center
+		padding-top: 15px
+		color: $white
+		
+		+respond-to($tablet)
+			padding-top: 0
+			margin: 20px 0
+
+	&:last-child
+		margin-right: 70px
+		
+		+respond-to($desktop)
+			margin-right: 20px
+		+respond-to($tablet)
+			margin-left: 0
+			margin-right: 0
+	
+.match_img
+	border: 1px solid #e1e3e5
+	margin-bottom: 13px
+	
+	+respond-to($tablet)
+		margin-bottom: 0
+		
+	+respond-to($mobile)
+		width: 205px
+		height: 142px
+		margin-left: auto
+		margin-right: auto
+	
+	img
+		width: 205px
+		height: 140px
+		
+.match_title
+	font: 30px 'RobotoRegular'
+	color: $white
+	text-align: center
+	margin-bottom: 30px
+	
+	+respond-to($tablet)
+		margin-bottom: 0
+	
+.match_square
+	text-align: center
+	cursor: default
+	
+.match_square_item
+	display: inline-block
+	width: 25px
+	height: 24px
+	margin-right: 8px
+	text-align: center
+	line-height: 24px
+	color: $white
+	text-transform: uppercase
+	font-size: 13px
+
+	
+	&:last-child
+		margin-right: 0
+		
+	&.__green
+		background: #5cb85c
+		border: 1px solid #2d572a
+	&.__red
+		background: #d9534f
+		border: 1px solid #7d3c31
+	&.__yellow
+		background: #f0ad4e
+		border: 1px solid #a07d3a
+		
+.match_date
+	font: 18px 'OpenSansRegular'
+	padding-bottom: 20px
+	margin-bottom: 20px
+	position: relative
+	
+	+respond-to($tablet)
+		padding-bottom: 0
+		margin-bottom: 0
+	
+	&:after
+		content: ''
+		width: 70px
+		height: 1px
+		background: $white
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		
+		+respond-to($tablet)
+			content: none
+
+.match_name, .match_where
+	font: 16px 'OpenSansRegular'
+	margin-bottom: 5px

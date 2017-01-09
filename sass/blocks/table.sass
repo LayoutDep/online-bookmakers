@@ -164,12 +164,29 @@
 	&.__link
 		text-align: left
 		
+	&.__padding-min
+		padding-left: 10px !important
+		
+	&.__colored
+		background: #fbdcd6
+		
 .table.__blue .table_td, .table.__blue .table_th
 	&.__image
 		border-left: none
 		
 	&.__link
 		padding-left: 20px
+		
+	
+.table.__part .table_td, .table.__part .table_th
+	&.__image
+		border-left: none
+		width: 25%
+	&.__bonus
+		width: 20%
+		
+	&.__min
+		width: 8%
 		
 .table.__blue .table_td
 	&.__image-bordered
@@ -186,16 +203,6 @@
 		
 		+respond-to($desktop)
 			border-left: none
-	
-.table.__part .table_td, .table.__part .table_th
-	&.__image
-		border-left: none
-		width: 25%
-	&.__bonus
-		width: 20%
-		
-	&.__min
-		width: 8%
 		
 .table_small
 	font: 12px/1 'OpenSansRegular'
@@ -271,6 +278,9 @@
 		
 		&:hover
 			text-decoration: underline
+		
+	&.__blue
+		color: #227496 !important
 		
 .table_stars
 	padding-left: 18px

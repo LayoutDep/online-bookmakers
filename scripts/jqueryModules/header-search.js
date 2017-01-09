@@ -1,4 +1,8 @@
 app.addModule('header-search', function () {
+	/**
+	 * Используется плагин - https://github.com/devbridge/jQuery-Autocomplete
+	 * Данные должны быть отправлены в виде массива (см. переменную countries)
+	 */
 	var $headerSearch = $('#header-search');
 	
 	if ($headerSearch.length) {
@@ -18,12 +22,9 @@ app.addModule('header-search', function () {
 		try {
 			$headerSearch.autocomplete({
 				//serviceUrl: '/autocomplete/countries',
-				lookup: countries,
+				lookup: countries, // параметр - убрать, переменную countries - удалить
 				onSelect: function (suggestion) {
-					$('<a>', {
-						'href': suggestion.data,
-						'target': '_blank'
-					})[0].click();
+					$('<a>', {'href': suggestion.data,'target': '_blank'})[0].click();
 				},
 				onSearchComplete: function (query, suggestions) {
 					if (!suggestions.length) {
